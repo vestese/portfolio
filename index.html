@@ -221,17 +221,21 @@
     <section class="contact_section">
 
         <div class="contact_formulaire">
-            <form name="contact" method="POST" data-netlify="true">
-                <h2 class="contact_titre"><strong>Contactez-moi</strong><img src="contacter.png" class="image_contact">
-                </h2>
-                <label for="name"><strong>Nom :</strong></label>
-                <input type="text" id="name" name="name">
-                <label for="email"><strong>Email :</strong></label>
-                <input type="email" id="email" name="email">
-                <label for="message"><strong>Message :</strong></label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+
+  <h2 class="contact_titre"><strong>Contactez-moi</strong><img src="contacter.png" class="image_contact"></h2>
+  <label for="name"><strong>Nom :</strong></label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email"><strong>Email :</strong></label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="message"><strong>Message :</strong></label>
+  <textarea id="message" name="message" required></textarea>
+  
+  <button type="submit">Envoyer</button>
+</form>
         </div>
     </section>
 </body>
@@ -251,5 +255,6 @@
     </div>
 </footer>
 <script src="script.js" defer></script>
+
 
 </html>
