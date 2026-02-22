@@ -1,260 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Steve Kabore Aymar Séraphin - Ingénieur des Systèmes Numériques">
+    <title>Portfolio - Steve Kabore</title>
     <link rel="stylesheet" href="style.css">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title> portfolio</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="BUTton">
-        <BUtton class="button" id="Bouttonpresentation">presentation</BUtton>
-        <BUTton class="button" id="Bouttoncompetence">competence</BUTton>
-        <BUTton class="button" id="Bouttonprojet">projet</BUTton>
-        <BUTton class="button" id="Bouttoncontact">contact</BUTton>
-    </div>
-    <section class="Acceuil">
-        <div class="Acceuil_texte">
-            <P><img src="image copy.png" alt="portfolio" class="imageportfolio">
-                <br>
-                BIENVENUE
-                <br>
-                SUR MON PORTFOLIO WEBSITE
-
-                <br>
-                JE SUIS STEVE KABORE AYMAR SERAPHIN
-                <br>
-                INGENIEUR DES SYSTÈMES NUMERIQUES
-            </P>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">SK</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <button class="nav-btn" id="Bouttonpresentation">Présentation</button>
+            <button class="nav-btn" id="Bouttoncompetence">Compétences</button>
+            <button class="nav-btn" id="Bouttonprojet">Projets</button>
+            <button class="nav-btn" id="Bouttoncontact">Contact</button>
         </div>
+    </nav>
 
+    <!-- ========== ACCUEIL ========== -->
+    <section class="Acceuil" id="accueil">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="image copy.png" alt="Logo portfolio" class="imageportfolio">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Bienvenue sur mon portfolio</p>
+                <h1 class="hero-name">Steve Kabore<br><span>Aymar Séraphin</span></h1>
+                <p class="hero-title">Ingénieur des Systèmes Numériques</p>
+                <div class="hero-cta">
+                    <a href="cv steven.pdf" download class="btn-primary">📄 Télécharger mon CV</a>
+                    <button class="btn-secondary" id="heroContactBtn">Me contacter</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
     </section>
-    <section class="presentation_section">
+
+    <!-- ========== PRÉSENTATION ========== -->
+    <section class="presentation_section" id="presentation">
+        <div class="section-header">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="title-line"></div>
+        </div>
         <div class="presentation">
             <div class="presentationTexte">
-                <h1>
-                    <strong>STEVE KABORE AYMAR SERAPHIN </strong>
-                </h1>
-                <P>JE SUIS INGENIEUR DES SYTEMES NUMERIQUES
-                    <br>
-                    je suis passionner par l'informatique et les nouvelles technologies
-                    <br>
-                    j'ai eu mon baccalauréat en 2023
-                    <br>
-                    je suis titulaire d'un diplome d'ingénieur de conception en genie des sytemes numeriques en 2028
-                    <br>
-                    je suis à la recherche d'un emploi en tant qu'ingénieur des systèmes numériques
-                </P>
+                <h2>Steve Kabore Aymar Séraphin</h2>
+                <p>Je suis <strong>Ingénieur des Systèmes Numériques</strong>, passionné par l'informatique et les
+                    nouvelles technologies.</p>
+                <ul class="about-list">
+                    <li>🎓 Baccalauréat obtenu en 2023</li>
+                    <li>🏆 Diplôme d'ingénieur de conception en génie des systèmes numériques (2028)</li>
+                    <li>💼 À la recherche d'un emploi en tant qu'ingénieur des systèmes numériques</li>
+                    <li>🌍 Basé au Burkina Faso</li>
+                </ul>
             </div>
             <div class="presentation_image">
-                <a href="cv steven.pdf" download target="_blank"><button class="button5">Mon cv est disponible en
-                        cliquant sur le bouton ci-dessous</button></a>
-                <img src="WhatsApp Image 2026-02-18 at 16.06.36.jpeg" alt="image de presentation"
+                <img src="WhatsApp Image 2026-02-18 at 16.06.36.jpeg" alt="Photo de présentation de Steve Kabore"
                     class="imagepresentation">
+                <a href="cv steven.pdf" download class="btn-primary" style="margin-top:20px">📄 Mon CV</a>
             </div>
         </div>
     </section>
-    <section class="competence_section">
-        <h1 class="cometencesh1">
-            <strong>competence </strong>
-        </h1>
-        <div class="competence">
-            <div class="competence_programmation">
-                <h2><strong>Language de programmation</strong></h2>
-                <p>je suis compétent en :</p>
-                <ul>
-                    <img src="python.png" class="iconpro">
-                    <img src="java.png" class="iconpro">
-                    <img src="c.png" class="iconpro">
-                    <img src="téléchargement (1).png" class="iconpro">
-                    <img src="html.png" class="iconpro">
-                    <img src="css.png" class="iconpro">
-                </ul>
-            </div>
-            <div class="competence_reseaux">
-                <h2><strong>competences reseaux</strong></h2>
-                <p>je suis compétent en :</p>
-                <ul>
-                    <p>configuration VOIP</p>
-                    <p>configuration des switchs</p>
-                    <p>configuration des pare-feux</p>
-                    <p>configuration des serveurs</p>
-                    <p>configuration des routeurs</p>
-                    <p>configuration VPN</p>
-                    <p>configuration VLAN</p>
-                    <p>configuration DNS</p>
-                    <p>configuration DHCP</p>
-                </ul>
-            </div>
-            <div class="cometences_personnel ">
-                <h2><strong>competences personnel</strong></h2>
-                <p>je suis tres competant et je sais :</p>
-                <ul>
-                    <p>travailler en équipe</p>
-                    <p>travailler sous pression</p>
-                    <p>travailler en autonomie</p>
-                    <p>travailler en équipe</p>
-                    <p>travailler sous pression</p>
-                    <p>travailler en autonomie</p>
-                </ul>
-            </div>
-            <div class="competence_langue">
-                <h2><strong>competences langue</strong></h2>
-                <p>je sais parler et ecrire en :</p>
-                <ul>
-                    <p>francais</p>
-                    <p>anglais</p>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="projet_section">
-        <h1>
-            <strong class="projet_h1">projet </strong>
-        </h1>
-        <div class="navigation_projet ">
-            <button class="button5" id="button_projet_reseaux">projet reseaux</button>
-            <button class="button5" id="button_projet_programmation">projet programmation</button>
-            <button class="button5" id="button_projet_electronique">projet electronique</button>
 
+    <!-- ========== COMPÉTENCES ========== -->
+    <section class="competence_section" id="competences">
+        <div class="section-header">
+            <h2 class="section-title">Compétences</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="competence">
+            <div class="competence_programmation skill-card">
+                <h3>💻 Langages de programmation</h3>
+                <p>Je suis compétent en :</p>
+                <div class="icons-grid">
+                    <div class="icon-item">
+                        <img src="python.png" class="iconpro" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="java.png" class="iconpro" alt="Java">
+                        <span>Java</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="c.png" class="iconpro" alt="C">
+                        <span>C</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="html.png" class="iconpro" alt="HTML">
+                        <span>HTML</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="css.png" class="iconpro" alt="CSS">
+                        <span>CSS</span>
+                    </div>
+                    <div class="icon-item">
+                        <img src="téléchargement (1).png" class="iconpro" alt="JavaScript">
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competence_reseaux skill-card">
+                <h3>🌐 Compétences Réseaux</h3>
+                <p>Je suis compétent en :</p>
+                <ul class="skill-list">
+                    <li>Configuration VoIP</li>
+                    <li>Configuration des switchs</li>
+                    <li>Configuration des pare-feux</li>
+                    <li>Configuration des serveurs</li>
+                    <li>Configuration des routeurs</li>
+                    <li>Configuration VPN</li>
+                    <li>Configuration VLAN</li>
+                    <li>Configuration DNS &amp; DHCP</li>
+                </ul>
+            </div>
+
+            <div class="cometences_personnel skill-card">
+                <h3>🤝 Compétences personnelles</h3>
+                <p>Je sais :</p>
+                <ul class="skill-list">
+                    <li>Travailler en équipe</li>
+                    <li>Travailler sous pression</li>
+                    <li>Travailler en autonomie</li>
+                    <li>Faire preuve d'adaptabilité</li>
+                    <li>Communiquer efficacement</li>
+                </ul>
+            </div>
+
+            <div class="competence_langue skill-card">
+                <h3>🗣️ Langues</h3>
+                <p>Je sais parler et écrire en :</p>
+                <ul class="skill-list lang-list">
+                    <li><span class="flag">🇫🇷</span> Français <span class="level">Natif</span></li>
+                    <li><span class="flag">🇬🇧</span> Anglais <span class="level">Intermédiaire</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section class="projet_section" id="projets">
+        <div class="section-header">
+            <h2 class="section-title">Projets</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="navigation_projet">
+            <button class="btn-filter active" id="button_projet_reseaux" data-filter="reseaux">🌐 Réseaux</button>
+            <button class="btn-filter" id="button_projet_programmation" data-filter="programmation">💻
+                Programmation</button>
+            <button class="btn-filter" id="button_projet_electronique" data-filter="electronique">⚡
+                Électronique</button>
         </div>
 
         <div class="projet">
 
-            <div class="projet_Reseaux">
-                <div class="projet_voip">
-                    <h2><strong>VOIP</strong></h2>
-                    <p>Installation et configuration d'un système de téléphonie sur IP avec asterisk et ubuntu serveurs
+            <!-- Projets Réseaux -->
+            <div class="projet_Reseaux projet-category" data-category="reseaux">
+                <div class="project-card projet_voip">
+                    <div class="project-icon">📞</div>
+                    <h3>VOIP</h3>
+                    <p>Installation et configuration d'un système de téléphonie sur IP avec Asterisk et Ubuntu Server.
                     </p>
-                    <img src="voip.jpeg" class="image_project2">
-                    <a href=""></a>
+                    <img src="voip.jpeg" class="image_project" alt="Projet VOIP">
                 </div>
-                <div class="projet_VPN">
-                    <h2><strong>VPN</strong></h2>
-                    <p>Installation et configuration d'un système de VPN avec windows server 2019</p>
-                    <img src="vpn.png" class="image_project2">
-                    <a href=""></a>
-                </div>
-            </div>
-            <div class="projet_programmation">
-                <div class="projet_jeux">
-                    <h2><strong>Jeux</strong></h2>
-                    <p>Création d'un ensemble de jeux avec computer vision avec mes camarades de classe </p>
-                    <p>c'est un proje ou il ya plusieurs jeux dont le choix se fait avec le nombre de doigt lever il
-                        yavais
-                        3
-                        jeux </p>
-                    <ul>
-                        <p>un jeux de tire spatiale</p>
-                        <p>un jeux de dessin </p>
-                        <p>un jeux de pierre papier ciseaux</p>
-                    </ul>
-                    <img src="WhatsApp Image 2026-02-19 at 16.47.01.jpeg " class="image_project1">
-                    <img src="WhatsApp Image 2026-02-19 at 16.47.01 (2).jpeg " class="image_project1">
-                    <img src="WhatsApp Image 2026-02-19 at 16.47.01 (1).jpeg " class="image_project1">
-                    <img src="WhatsApp Image 2026-02-19 at 16.47.00.jpeg " class="image_project1">
-                    <a href=""></a>
-                </div>
-
-                <div class="projet_Groupesgenerator">
-                    <h2><strong>Generateur de groupes aleatoires java</strong></h2>
-                    <p>Création d'un Generateur de groupes aleatoires en java avec mes camarades de classe </p>
-                    <img src="" class="image_project">
-                    <a href=""></a>
-                </div>
-                <div class="projet_Groupesgenerator2">
-                    <h2><strong>Generateur de groupes aleatoires python </strong></h2>
-                    <p>Création d'un Generateur de groupes aleatoires en python avec mes camarades de classe </p>
-                    <p>c'est un logiciel qui permet de lire les pdf realiser les groupes et aussi lire des photos d'une
-                        liste
-                        etudiant et les assigner à un groupe et les exporter en PDF </p>
-                    <img src="jeux groupes.jpeg" class="image_project1">
-                    <a href=""></a>
-                </div>
-
-                <div class="projet_site_web">
-                    <h2><strong>Site web</strong></h2>
-                    <p>Création d'un portfolio personnel avec html, css et javascript</p>
-                    <img src="image.png" class="image_project">
-                    <a href=""></a>
-                </div>
-                <div class="projet_site_web_association">
-                    <h2><strong>Site web</strong></h2>
-                    <p>Création d'un portfolio pour mon club d'informatique</p>
-                    <img src="" alt="">
-                    <a href=""></a>
+                <div class="project-card projet_VPN">
+                    <div class="project-icon">🔒</div>
+                    <h3>VPN</h3>
+                    <p>Installation et configuration d'un système de VPN avec Windows Server 2019.</p>
+                    <img src="vpn.png" class="image_project" alt="Projet VPN">
                 </div>
             </div>
-            <div class="projet_electronique">
-                <div class="projet_ElectroniqueRobot ">
-                    <h2><strong>Robot ironscout </strong></h2>
-                    <p>Création d'un robot ironscout avec 2 camarades de classe</p>
-                    <p>c'est un robot qui peut </p>
+
+            <!-- Projets Programmation -->
+            <div class="projet_programmation projet-category" data-category="programmation">
+                <div class="project-card projet_jeux">
+                    <div class="project-icon">🎮</div>
+                    <h3>Jeux avec Computer Vision</h3>
+                    <p>Création d'un ensemble de jeux avec computer vision. Le choix du jeu se fait avec le nombre de
+                        doigts levés — 3 jeux disponibles :</p>
                     <ul>
-                        <p>detecter les mines</p>
-                        <p>eviter les obstacles</p>
-                        <p>detceter les humain s</p>
-                        <p>saluer les humains</p>
+                        <li>🚀 Jeu de tir spatial</li>
+                        <li>🎨 Jeu de dessin</li>
+                        <li>✂️ Pierre-papier-ciseaux</li>
                     </ul>
-                    <img src="WhatsApp Image 2026-02-19 at 15.35.45.jpeg" class="image_project">
-                    <a href=""></a>
+                    <div class="project-images">
+                        <img src="WhatsApp Image 2026-02-19 at 16.47.01.jpeg" class="image_project1"
+                            alt="Jeux vision 1">
+                        <img src="WhatsApp Image 2026-02-19 at 16.47.01 (2).jpeg" class="image_project1"
+                            alt="Jeux vision 2">
+                        <img src="WhatsApp Image 2026-02-19 at 16.47.01 (1).jpeg" class="image_project1"
+                            alt="Jeux vision 3">
+                        <img src="WhatsApp Image 2026-02-19 at 16.47.00.jpeg" class="image_project1"
+                            alt="Jeux vision 4">
+                    </div>
                 </div>
-                <div class="projet_ElectroniqueRobot2 ">
-                    <h2><strong>Jardin automatique </strong></h2>
-                    <p>Création d'un jardin automatique</p>
-                    <p>c'est un jardin qui permet de </p>
+
+                <div class="project-card projet_Groupesgenerator">
+                    <div class="project-icon">☕</div>
+                    <h3>Générateur de groupes (Java)</h3>
+                    <p>Création d'un générateur de groupes aléatoires en Java avec mes camarades de classe.</p>
+                </div>
+
+                <div class="project-card projet_Groupesgenerator2">
+                    <div class="project-icon">🐍</div>
+                    <h3>Générateur de groupes (Python)</h3>
+                    <p>Logiciel Python permettant de lire des PDF, réaliser des groupes, lire des photos d'une liste
+                        d'étudiants, les assigner à un groupe et les exporter en PDF.</p>
+                    <img src="jeux groupes.jpeg" class="image_project1" alt="Générateur groupes Python">
+                </div>
+
+                <div class="project-card projet_site_web">
+                    <div class="project-icon">🌍</div>
+                    <h3>Portfolio Personnel</h3>
+                    <p>Création de ce portfolio personnel avec HTML, CSS et JavaScript.</p>
+                    <img src="image.png" class="image_project" alt="Site portfolio">
+                </div>
+
+                <div class="project-card projet_site_web_association">
+                    <div class="project-icon">🖥️</div>
+                    <h3>Site du club informatique</h3>
+                    <p>Création d'un site web pour mon club d'informatique.</p>
+                </div>
+            </div>
+
+            <!-- Projets Électronique -->
+            <div class="projet_electronique projet-category" data-category="electronique">
+                <div class="project-card projet_ElectroniqueRobot">
+                    <div class="project-icon">🤖</div>
+                    <h3>Robot IronScout</h3>
+                    <p>Création d'un robot IronScout avec 2 camarades. Ce robot peut :</p>
                     <ul>
-                        <li>detecter le niveau d'eau</li>
-                        <li>arroser les plantes</li>
-                        <li>detecter la lumiere</li>
-                        <li>et d'adapter la temperature</li>
+                        <li>🔍 Détecter les mines</li>
+                        <li>🚧 Éviter les obstacles</li>
+                        <li>👤 Détecter les humains</li>
+                        <li>👋 Saluer les humains</li>
                     </ul>
-                    <img src="jardin.jpeg" class="image_project">
-                    <a href=""></a>
+                    <img src="WhatsApp Image 2026-02-19 at 15.35.45.jpeg" class="image_project" alt="Robot IronScout">
+                </div>
+                <div class="project-card projet_ElectroniqueRobot2">
+                    <div class="project-icon">🌱</div>
+                    <h3>Jardin Automatique</h3>
+                    <p>Création d'un jardin automatique permettant de :</p>
+                    <ul>
+                        <li>💧 Détecter le niveau d'eau</li>
+                        <li>🌿 Arroser les plantes</li>
+                        <li>☀️ Détecter la lumière</li>
+                        <li>🌡️ Adapter la température</li>
+                    </ul>
+                    <img src="jardin.jpeg" class="image_project" alt="Jardin automatique">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact_section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact_formulaire">
+                <h3 class="contact_titre">
+                    <img src="contacter.png" class="image_contact" alt="Contact">
+                    Envoyez-moi un message
+                </h3>
+                <form name="contact" method="POST" data-netlify="true" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Envoyer ✉️</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <p>📧 <a href="mailto:Kaboesteven@gmail.com">Kaboesteven@gmail.com</a></p>
+                <p>📞 <a href="tel:+22669653127">+226 69 65 31 27</a></p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1HGyjVT1ZW/" target="_blank" rel="noopener"
+                        class="social-link" aria-label="Facebook">
+                        <img src="6881700d-6ff5-4da2-9ca7-49ffdfd18cd1.jpg" alt="Facebook" class="contact_img">
+                    </a>
+                    <a href="https://wa.me/qr/BLGUHMEOJ2WVO1" target="_blank" rel="noopener" class="social-link"
+                        aria-label="WhatsApp">
+                        <img src="1b550b1f-4a07-462e-b9d7-e3051f443a46.jpg" alt="WhatsApp" class="contact_img">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link"
+                        aria-label="Instagram">
+                        <img src="sl_z_072523_61700_01.jpg" alt="Instagram" class="contact_img">
+                    </a>
+                    <a href="https://www.linkedin.com/in/steve-aymar-séraphin-kabore-448670327" target="_blank"
+                        rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <img src="téléchargement (1).jpeg" alt="LinkedIn" class="contact_img">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact_section">
 
-        <div class="contact_formulaire">
-<form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact">
-
-  <h2 class="contact_titre"><strong>Contactez-moi</strong><img src="contacter.png" class="image_contact"></h2>
-  <label for="name"><strong>Nom :</strong></label>
-  <input type="text" id="name" name="name" required>
-  
-  <label for="email"><strong>Email :</strong></label>
-  <input type="email" id="email" name="email" required>
-  
-  <label for="message"><strong>Message :</strong></label>
-  <textarea id="message" name="message" required></textarea>
-  
-  <button type="submit">Envoyer</button>
-</form>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Portfolio Steve Kabore Aymar Séraphin — Tous droits réservés.</p>
+            <p>
+                <a href="mailto:Kaboesteven@gmail.com">Kaboesteven@gmail.com</a> |
+                <a href="tel:+22669653127">+226 69 65 31 27</a>
+            </p>
         </div>
-    </section>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
-<footer>
-
-    <div class="contact">
-        <p>© 2026 Portfolio. Tous droits réservés.</p>
-        <p>Kaboesteven@gmail.com </p>
-        <p>tel:+226 69 65 31 27</p>
-        <a href="https://www.facebook.com/share/1HGyjVT1ZW/" target="_blank"><img
-                src="6881700d-6ff5-4da2-9ca7-49ffdfd18cd1.jpg" alt="facebook" class="contact_img"> </a>
-        <a href="https://wa.me/qr/BLGUHMEOJ2WVO1" target="_blank"><img src="1b550b1f-4a07-462e-b9d7-e3051f443a46.jpg"
-                alt="WhatsApp" class="contact_img"> </a>
-        <img src="sl_z_072523_61700_01.jpg" alt="instagram" class="contact_img" href="https://www.instagram.com/">
-        <a href="https://www.linkedin.com/in/steve-aymar-séraphin-kabore-448670327?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-            target="_blank"> <img src="téléchargement (1).jpeg" alt="linkedin" class="contact_img"> </a>
-    </div>
-</footer>
-<script src="script.js" defer></script>
-
 
 </html>
